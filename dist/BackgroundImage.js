@@ -49,9 +49,7 @@ var Back = (0, _styledComponents2.default)(function (_ref) {
       size = _ref.size,
       position = _ref.position,
       cursor = _ref.cursor,
-      fit = _ref.fit,
-      ratio = _ref.ratio,
-      props = _objectWithoutProperties(_ref, ['src', 'size', 'position', 'cursor', 'fit', 'ratio']);
+      props = _objectWithoutProperties(_ref, ['src', 'size', 'position', 'cursor']);
 
   return _react2.default.createElement(_Relative2.default, props);
 })(_templateObject, function (_ref2) {
@@ -64,6 +62,17 @@ var Back = (0, _styledComponents2.default)(function (_ref) {
   var position = _ref4.position;
   return position;
 }, (0, _injectProps2.default)('cursor'));
+
+Back.propTypes = {
+  src: _propTypes2.default.string,
+  size: _propTypes2.default.string,
+  position: _propTypes2.default.string
+};
+
+Back.defaultProps = {
+  size: 'cover',
+  position: '50% 50%'
+};
 
 var percent = function percent(n) {
   return (0, _isNumber2.default)(n) ? n * 100 + '%' : n;
@@ -81,17 +90,6 @@ var BackgroundImage = function BackgroundImage(_ref5) {
   return _react2.default.createElement(Back, _extends({ pb: !fit && toPercent(ratio) }, props));
 };
 
-Back.propTypes = {
-  ratio: _propTypes3.responsive,
-  fit: _propTypes2.default.bool
-};
-
-Back.defaultProps = {
-  size: 'cover',
-  position: '50% 50%',
-  ratio: 9 / 16
-};
-
 BackgroundImage.propTypes = {
   ratio: _propTypes3.responsive,
   fit: _propTypes2.default.bool
@@ -100,5 +98,7 @@ BackgroundImage.propTypes = {
 BackgroundImage.defaultProps = {
   ratio: 9 / 16
 };
+
+BackgroundImage.displayName = 'BackgroundImage';
 
 exports.default = BackgroundImage;
