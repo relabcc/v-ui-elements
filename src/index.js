@@ -1,4 +1,5 @@
 export { default as Absolute } from './Absolute';
+export { default as BackgroundImage } from './BackgroundImage';
 export { default as Box } from './Box';
 export { default as Container } from './Container';
 export { default as Fixed } from './Fixed';

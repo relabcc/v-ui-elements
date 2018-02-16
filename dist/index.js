@@ -13,6 +13,15 @@ Object.defineProperty(exports, 'Absolute', {
   }
 });
 
+var _BackgroundImage = require('./BackgroundImage');
+
+Object.defineProperty(exports, 'BackgroundImage', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_BackgroundImage).default;
+  }
+});
+
 var _Box = require('./Box');
 
 Object.defineProperty(exports, 'Box', {
