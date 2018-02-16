@@ -11,7 +11,11 @@ import injectProps from './utils/injectProps';
 import Relative from './Relative';
 
 const Back = styled(({
-  src, size, position, cursor, fit, ratio, ...props
+  src,
+  size,
+  position,
+  cursor,
+  ...props
 }) => (
   <Relative {...props} />
 ))`
@@ -21,23 +25,23 @@ const Back = styled(({
   ${injectProps('cursor')}
 `;
 
+Back.propTypes = {
+  src: PropTypes.string,
+  size: PropTypes.string,
+  position: PropTypes.string,
+};
+
+Back.defaultProps = {
+  size: 'cover',
+  position: '50% 50%',
+};
+
 const percent = n => (isNumber(n) ? `${n * 100}%` : n);
 
 const toPercent = ratio => (isArray(ratio) ? ratio.map(percent) : percent(ratio));
 
 const BackgroundImage = ({ ratio, fit, ...props }) =>
   <Back pb={!fit && toPercent(ratio)} {...props} />;
-
-Back.propTypes = {
-  ratio: responsive,
-  fit: PropTypes.bool,
-};
-
-Back.defaultProps = {
-  size: 'cover',
-  position: '50% 50%',
-  ratio: 9 / 16,
-};
 
 BackgroundImage.propTypes = {
   ratio: responsive,
@@ -47,5 +51,7 @@ BackgroundImage.propTypes = {
 BackgroundImage.defaultProps = {
   ratio: 9 / 16,
 };
+
+BackgroundImage.displayName = 'BackgroundImage';
 
 export default BackgroundImage;

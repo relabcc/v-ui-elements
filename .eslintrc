@@ -2,6 +2,7 @@
   "extends": "airbnb",
   "rules": {
     "function-paren-newline": ["error", "consistent"],
+    "jsx-a11y/accessible-emoji": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/require-default-props": 0
   },
