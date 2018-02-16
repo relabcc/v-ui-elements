@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { fontSize, space, color, responsiveStyle } from 'styled-system';
+import cleanElement from 'clean-element';
+
 import theme from './theme';
 
 export const caps = props =>
@@ -12,13 +14,14 @@ export const regular = props =>
 export const bold = props =>
   (props.bold ? { fontWeight: props.theme.bold } : null);
 
+const P = cleanElement('p');
 
 const align = responsiveStyle({
   prop: 'align',
   cssProperty: 'textAlign',
 });
 
-const Text = styled.div`
+const Text = styled(P)`
   ${fontSize} ${space} ${color} ${caps} ${regular} ${bold} ${align};
 `;
 

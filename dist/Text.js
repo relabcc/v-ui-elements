@@ -17,6 +17,10 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _styledSystem = require('styled-system');
 
+var _cleanElement = require('clean-element');
+
+var _cleanElement2 = _interopRequireDefault(_cleanElement);
+
 var _theme = require('./theme');
 
 var _theme2 = _interopRequireDefault(_theme);
@@ -37,12 +41,14 @@ var bold = exports.bold = function bold(props) {
   return props.bold ? { fontWeight: props.theme.bold } : null;
 };
 
+var P = (0, _cleanElement2.default)('p');
+
 var align = (0, _styledSystem.responsiveStyle)({
   prop: 'align',
   cssProperty: 'textAlign'
 });
 
-var Text = _styledComponents2.default.div(_templateObject, _styledSystem.fontSize, _styledSystem.space, _styledSystem.color, caps, regular, bold, align);
+var Text = (0, _styledComponents2.default)(P)(_templateObject, _styledSystem.fontSize, _styledSystem.space, _styledSystem.color, caps, regular, bold, align);
 
 Text.displayName = 'Text';
 
