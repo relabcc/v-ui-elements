@@ -67,6 +67,15 @@ Object.defineProperty(exports, 'Image', {
   }
 });
 
+var _Loader = require('./Loader');
+
+Object.defineProperty(exports, 'Loader', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Loader).default;
+  }
+});
+
 var _Relative = require('./Relative');
 
 Object.defineProperty(exports, 'Relative', {
