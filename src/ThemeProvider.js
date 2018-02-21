@@ -11,7 +11,7 @@ export default class VUiProvider extends Component {
   componentWillMount() {
     window.WebFontConfig = {
       google: {
-        families: ['Lato'],
+        families: ['Lato:300,400'],
       },
     };
 

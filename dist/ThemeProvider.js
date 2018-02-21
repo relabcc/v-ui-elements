@@ -44,7 +44,7 @@ var VUiProvider = function (_Component) {
     value: function componentWillMount() {
       window.WebFontConfig = {
         google: {
-          families: ['Lato']
+          families: ['Lato:300,400']
         }
       };
 

@@ -1,18 +1,10 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { fontSize, space, color, responsiveStyle } from 'styled-system';
+import { fontSize, fontWeight, space, color, responsiveStyle } from 'styled-system';
 import cleanElement from 'clean-element';
 
+import injectProps from './utils/injectProps';
 import theme from './theme';
-
-export const caps = props =>
-  (props.caps ? { textTransform: 'uppercase' } : null);
-
-export const regular = props =>
-  (props.regular ? { fontWeight: props.theme.regular } : null);
-
-export const bold = props =>
-  (props.bold ? { fontWeight: props.theme.bold } : null);
 
 const P = cleanElement('p');
 
@@ -22,7 +14,12 @@ const align = responsiveStyle({
 });
 
 const Text = styled(P)`
-  ${fontSize} ${space} ${color} ${caps} ${regular} ${bold} ${align};
+  ${fontSize}
+  ${space}
+  ${color}
+  ${align}
+  ${fontWeight}
+  ${injectProps('textTransform')}
 `;
 
 Text.displayName = 'Text';
@@ -40,9 +37,6 @@ Text.propTypes = {
     PropTypes.array,
   ]),
   align: PropTypes.oneOf(['left', 'center', 'right', 'justify']),
-  caps: PropTypes.bool,
-  regular: PropTypes.bool,
-  bold: PropTypes.bool,
   color: PropTypes.string,
   /** Margin */
   m: numberStringOrArray,
