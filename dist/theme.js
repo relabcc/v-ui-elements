@@ -39,7 +39,7 @@ var emToPx = function emToPx(em) {
   return em * 16;
 };
 
-var breakpoints = exports.breakpoints = [36, 48, 62, 75].map(emToPx);
+var breakpoints = exports.breakpoints = [36, 48, 62, 75, 90].map(emToPx);
 var containerWidth = exports.containerWidth = [36, 46, 60, 73].map(emToPx);
 
 var theme = exports.theme = (0, _merge2.default)(_constants2.default, {

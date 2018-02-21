@@ -27,7 +27,7 @@ export default class VUiProvider extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <Base color="white" f={[14, 16, 18, 20]} {...this.props} />
+        <Base color="white" f={[14, 16, 18, 20, 22, 24]} {...this.props} />
       </ThemeProvider>
     );
   }
