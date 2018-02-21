@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { fontSize, fontWeight, space, color, responsiveStyle } from 'styled-system';
+import {
+  fontSize,
+  fontWeight,
+  lineHeight,
+  space,
+  color,
+  responsiveStyle,
+  style,
+} from 'styled-system';
 import cleanElement from 'clean-element';
 
-import injectProps from './utils/injectProps';
 import theme from './theme';
 
 const P = cleanElement('p');
@@ -13,13 +20,19 @@ const align = responsiveStyle({
   cssProperty: 'textAlign',
 });
 
+const textTransform = style({
+  prop: 'textTransform',
+  cssProperty: 'textTransform',
+});
+
 const Text = styled(P)`
   ${fontSize}
   ${space}
   ${color}
   ${align}
   ${fontWeight}
-  ${injectProps('textTransform')}
+  ${lineHeight}
+  ${textTransform}
 `;
 
 Text.displayName = 'Text';

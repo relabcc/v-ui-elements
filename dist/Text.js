@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n']);
 
 var _styledComponents = require('styled-components');
 
@@ -19,10 +19,6 @@ var _styledSystem = require('styled-system');
 var _cleanElement = require('clean-element');
 
 var _cleanElement2 = _interopRequireDefault(_cleanElement);
-
-var _injectProps = require('./utils/injectProps');
-
-var _injectProps2 = _interopRequireDefault(_injectProps);
 
 var _theme = require('./theme');
 
@@ -39,7 +35,12 @@ var align = (0, _styledSystem.responsiveStyle)({
   cssProperty: 'textAlign'
 });
 
-var Text = (0, _styledComponents2.default)(P)(_templateObject, _styledSystem.fontSize, _styledSystem.space, _styledSystem.color, align, _styledSystem.fontWeight, (0, _injectProps2.default)('textTransform'));
+var textTransform = (0, _styledSystem.style)({
+  prop: 'textTransform',
+  cssProperty: 'textTransform'
+});
+
+var Text = (0, _styledComponents2.default)(P)(_templateObject, _styledSystem.fontSize, _styledSystem.space, _styledSystem.color, align, _styledSystem.fontWeight, _styledSystem.lineHeight, textTransform);
 
 Text.displayName = 'Text';
 

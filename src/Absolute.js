@@ -1,35 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import isBoolean from 'lodash/isBoolean';
-import { px } from 'styled-system/dist/util';
+import { top, left, right, bottom } from 'styled-system';
 import Box from './Box';
 
-const positions = [
-  'top',
-  'left',
-  'right',
-  'bottom',
-];
-
-const getPositions = props => positions.reduce((style, key) => {
-  const value = props[key];
-  if (!value) return style;
-  const attr = isBoolean(value) ? 0 : px(value);
-  return `${style}${key}: ${attr};`;
-}, '');
-
 const Absolute = styled(({
-  top,
-  left,
-  right,
-  bottom,
   z,
   ...props
 }) => <Box {...props} />)`
   position: absolute;
   z-index: ${({ z }) => z};
-  ${getPositions};
+  ${top};
+  ${left};
+  ${right};
+  ${bottom};
 `;
 
 const boolOrNumber = PropTypes.oneOfType([
