@@ -22,6 +22,15 @@ Object.defineProperty(exports, 'BackgroundImage', {
   }
 });
 
+var _Border = require('./Border');
+
+Object.defineProperty(exports, 'Border', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Border).default;
+  }
+});
+
 var _Box = require('./Box');
 
 Object.defineProperty(exports, 'Box', {

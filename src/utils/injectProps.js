@@ -1,4 +1,7 @@
 import kebabCase from 'lodash/kebabCase';
 import isNil from 'lodash/isNil';
 
-export default key => props => !isNil(props[key]) && `${kebabCase(key)}: ${props[key]};`;
+import getColor from './getColor';
+
+export default (key, color) =>
+  props => !isNil(props[key]) && `${kebabCase(key)}: ${color ? getColor(props[key])(props) : props[key]};`;

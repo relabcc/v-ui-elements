@@ -7,7 +7,7 @@ const Base = styled.div`
   color: ${colors.white};
 `;
 
-export default (props) => (
+export default props => (
   <ThemeProvider theme={theme}>
     <Base {...props} />
   </ThemeProvider>
