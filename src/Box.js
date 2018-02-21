@@ -13,7 +13,13 @@ const injectHeight = responsiveStyle({
   numberToPx: true,
 });
 
-export default styled(({ height, overflow, ...props }) => <Box {...props} />)`
+export default styled(({
+  height,
+  transform,
+  overflow,
+  ...props
+}) => <Box {...props} />)`
   ${injectHeight}
   ${injectProps('overflow')}
+  ${injectProps('transform')}
 `;
