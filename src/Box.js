@@ -13,6 +13,11 @@ const injectHeight = responsiveStyle({
   numberToPx: true,
 });
 
+const injectTransform = responsiveStyle({
+  prop: 'transform',
+  cssProperty: 'transform',
+});
+
 export default styled(({
   height,
   transform,
@@ -21,5 +26,5 @@ export default styled(({
 }) => <Box {...props} />)`
   ${injectHeight}
   ${injectProps('overflow')}
-  ${injectProps('transform')}
+  ${injectTransform}
 `;

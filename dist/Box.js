@@ -36,6 +36,11 @@ var injectHeight = (0, _styledSystem.responsiveStyle)({
   numberToPx: true
 });
 
+var injectTransform = (0, _styledSystem.responsiveStyle)({
+  prop: 'transform',
+  cssProperty: 'transform'
+});
+
 exports.default = (0, _styledComponents2.default)(function (_ref) {
   var height = _ref.height,
       transform = _ref.transform,
@@ -43,4 +48,4 @@ exports.default = (0, _styledComponents2.default)(function (_ref) {
       props = _objectWithoutProperties(_ref, ['height', 'transform', 'overflow']);
 
   return _react2.default.createElement(_Box2.default, props);
-})(_templateObject, injectHeight, (0, _injectProps2.default)('overflow'), (0, _injectProps2.default)('transform'));
+})(_templateObject, injectHeight, (0, _injectProps2.default)('overflow'), injectTransform);
