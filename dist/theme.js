@@ -35,10 +35,12 @@ var colors = exports.colors = {
   color4: blue
 };
 
-var breakpoints = exports.breakpoints = [36, 48, 62, 75]; // em
-var containerWidth = exports.containerWidth = [36, 46, 60, 73].map(function (em) {
+var emToPx = function emToPx(em) {
   return em * 16;
-});
+};
+
+var breakpoints = exports.breakpoints = [36, 48, 62, 75].map(emToPx);
+var containerWidth = exports.containerWidth = [36, 46, 60, 73].map(emToPx);
 
 var theme = exports.theme = (0, _merge2.default)(_constants2.default, {
   breakpoints: breakpoints,

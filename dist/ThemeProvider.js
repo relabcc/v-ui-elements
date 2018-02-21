@@ -4,9 +4,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n  font-family: ', ';\n  color: ', ';\n'], ['\n  font-family: ', ';\n  color: ', ';\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  font-family: ', ';\n'], ['\n  font-family: ', ';\n']);
 
 var _react = require('react');
 
@@ -14,9 +16,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _styledComponents = require('styled-components');
 
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
 var _theme = require('./theme');
+
+var _Box = require('./Box');
+
+var _Box2 = _interopRequireDefault(_Box);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28,7 +32,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Base = _styledComponents2.default.div(_templateObject, _theme.font, _theme.colors.white);
+var Base = _Box2.default.extend(_templateObject, _theme.font);
 
 var VUiProvider = function (_Component) {
   _inherits(VUiProvider, _Component);
@@ -62,7 +66,7 @@ var VUiProvider = function (_Component) {
       return _react2.default.createElement(
         _styledComponents.ThemeProvider,
         { theme: _theme.theme },
-        _react2.default.createElement(Base, this.props)
+        _react2.default.createElement(Base, _extends({ color: 'white', f: [14, 16, 18, 20] }, this.props))
       );
     }
   }]);

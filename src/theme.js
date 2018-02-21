@@ -21,8 +21,10 @@ export const colors = {
   color4: blue,
 };
 
-export const breakpoints = [36, 48, 62, 75]; // em
-export const containerWidth = [36, 46, 60, 73].map(em => em * 16);
+const emToPx = em => em * 16;
+
+export const breakpoints = [36, 48, 62, 75].map(emToPx);
+export const containerWidth = [36, 46, 60, 73].map(emToPx);
 
 export const theme = merge(constants, {
   breakpoints,

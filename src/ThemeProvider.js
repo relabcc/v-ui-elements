@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
-import { theme, colors, font } from './theme';
+import { ThemeProvider } from 'styled-components';
+import { theme, font } from './theme';
+import Box from './Box';
 
-const Base = styled.div`
+const Base = Box.extend`
   font-family: ${font};
-  color: ${colors.white};
 `;
 
 export default class VUiProvider extends Component {
@@ -27,7 +27,7 @@ export default class VUiProvider extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <Base {...this.props} />
+        <Base color="white" f={[14, 16, 18, 20]} {...this.props} />
       </ThemeProvider>
     );
   }
