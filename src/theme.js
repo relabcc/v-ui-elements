@@ -1,7 +1,7 @@
 import merge from 'lodash/merge';
 import constants from 'styled-system/dist/constants';
 
-export const font = 'sans-serif';
+export const font = '"Lato", "PingFang TC", "HeiTi TC", "Microsoft JhengHei", sans-serif';
 
 const green = '#07d3b5';
 const yellow = '#ffc215';

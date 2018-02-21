@@ -15,7 +15,7 @@ var _constants2 = _interopRequireDefault(_constants);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var font = exports.font = 'sans-serif';
+var font = exports.font = '"Lato", "PingFang TC", "HeiTi TC", "Microsoft JhengHei", sans-serif';
 
 var green = '#07d3b5';
 var yellow = '#ffc215';
