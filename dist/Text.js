@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  margin-top: 0;\n  margin-bottom: 0;\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  margin-top: 0;\n  margin-bottom: 0;\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n']);
 
 var _styledComponents = require('styled-components');
 
@@ -69,11 +69,11 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  theme: _theme2.default
+  theme: _theme2.default,
+  lineHeight: 1.5
 };
 
 Text.span = Text.withComponent('span');
-Text.p = Text.withComponent('p');
 Text.s = Text.withComponent('s');
 
 exports.default = Text;

@@ -26,6 +26,8 @@ const textTransform = style({
 });
 
 const Text = styled(P)`
+  margin-top: 0;
+  margin-bottom: 0;
   ${fontSize}
   ${space}
   ${color}
@@ -71,10 +73,10 @@ Text.propTypes = {
 
 Text.defaultProps = {
   theme,
+  lineHeight: 1.5,
 };
 
 Text.span = Text.withComponent('span');
-Text.p = Text.withComponent('p');
 Text.s = Text.withComponent('s');
 
 export default Text;
