@@ -46,19 +46,21 @@ var VUiProvider = function (_Component) {
   _createClass(VUiProvider, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
-      window.WebFontConfig = {
-        google: {
-          families: ['Lato:300,400']
-        }
-      };
+      if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+        window.WebFontConfig = {
+          google: {
+            families: ['Lato:300,400']
+          }
+        };
 
-      (function (d) {
-        var wf = d.createElement('script');
-        var s = d.scripts[0];
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.async = true;
-        s.parentNode.insertBefore(wf, s);
-      })(document);
+        (function (d) {
+          var wf = d.createElement('script');
+          var s = d.scripts[0];
+          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+          wf.async = true;
+          s.parentNode.insertBefore(wf, s);
+        })(document);
+      }
     }
   }, {
     key: 'render',

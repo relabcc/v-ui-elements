@@ -9,19 +9,21 @@ const Base = Box.extend`
 
 export default class VUiProvider extends Component {
   componentWillMount() {
-    window.WebFontConfig = {
-      google: {
-        families: ['Lato:300,400'],
-      },
-    };
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      window.WebFontConfig = {
+        google: {
+          families: ['Lato:300,400'],
+        },
+      };
 
-    ((d) => {
-      const wf = d.createElement('script');
-      const s = d.scripts[0];
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.async = true;
-      s.parentNode.insertBefore(wf, s);
-    })(document);
+      ((d) => {
+        const wf = d.createElement('script');
+        const s = d.scripts[0];
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    }
   }
 
   render() {
