@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Flex from 'grid-styled/dist/Flex';
-import {
-  responsiveStyle,
-} from 'styled-system';
+import { responsiveStyle } from 'styled-system';
 
 import injectProps from './utils/injectProps';
 
@@ -13,7 +11,15 @@ const injectHeight = responsiveStyle({
   numberToPx: true,
 });
 
-export default styled(({ height, overflow, ...props }) => <Flex {...props} />)`
+export default styled(({
+  height,
+  overflow,
+  overflowX,
+  overflowY,
+  ...props
+}) => <Flex {...props} />)`
   ${injectHeight}
   ${injectProps('overflow')}
+  ${injectProps('overflowX')}
+  ${injectProps('overflowY')}
 `;

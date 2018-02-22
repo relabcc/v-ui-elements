@@ -2,7 +2,7 @@ import React from 'react';
 import { configure, addDecorator } from '@storybook/react';
 import { injectGlobal } from 'styled-components';
 
-import { ThemeProvider, colors } from '../src';
+import { ThemeProvider, Box, colors } from '../src';
 
 injectGlobal`
   html,
@@ -19,7 +19,9 @@ injectGlobal`
 
 addDecorator(story => (
   <ThemeProvider>
-    {story()}
+    <Box p="1em">
+      {story()}
+    </Box>
   </ThemeProvider>
 ))
 
