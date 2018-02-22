@@ -29,7 +29,5 @@ export const containerWidth = [36, 46, 60, 73].map(emToPx);
 export const theme = merge(constants, {
   breakpoints,
   colors,
-  regular: 400,
-  bold: 700,
   containerWidth,
 });

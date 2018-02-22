@@ -66,7 +66,7 @@ var VUiProvider = function (_Component) {
       return _react2.default.createElement(
         _styledComponents.ThemeProvider,
         { theme: _theme.theme },
-        _react2.default.createElement(Base, _extends({ color: 'white', f: [14, 16, 18, 20, 22, 24] }, this.props))
+        _react2.default.createElement(Base, _extends({ color: 'white', f: [14, 16, 18, 20, 22] }, this.props))
       );
     }
   }]);

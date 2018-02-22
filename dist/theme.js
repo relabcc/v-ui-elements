@@ -45,7 +45,5 @@ var containerWidth = exports.containerWidth = [36, 46, 60, 73].map(emToPx);
 var theme = exports.theme = (0, _merge2.default)(_constants2.default, {
   breakpoints: breakpoints,
   colors: colors,
-  regular: 400,
-  bold: 700,
   containerWidth: containerWidth
 });
