@@ -23,13 +23,17 @@ const Button = styled(cleanElement('button'))`
   color: ${colors.white};
   transition: all 0.25s ease;
   line-height: 1;
+  > * {
+    vertical-align: middle;
+  }
 
   &:disabled {
     opacity: 0.5;
     cursor: default;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: ${hoverColor('green')};
     border-color: ${hoverColor('green')};
     color: ${hoverColor('black')};

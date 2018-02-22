@@ -6,7 +6,7 @@ import Next from './svg/Next';
 
 const ButtonNext = ({ children, ...props }) => (
   <Button px="1.5em" {...props}>
-    {children}
+    <span>{children}</span>
     <Next f="1.5em" ml="0.5em" w="1em" />
   </Button>
 );

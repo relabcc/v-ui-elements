@@ -33,7 +33,11 @@ var ButtonNext = function ButtonNext(_ref) {
   return _react2.default.createElement(
     _Button2.default,
     _extends({ px: '1.5em' }, props),
-    children,
+    _react2.default.createElement(
+      'span',
+      null,
+      children
+    ),
     _react2.default.createElement(_Next2.default, { f: '1.5em', ml: '0.5em', w: '1em' })
   );
 };

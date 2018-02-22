@@ -20,5 +20,8 @@ storiesOf('Button', module)
     <Button fullWidth>Button</Button>
   ))
   .add('Button Next', () => (
-    <ButtonNext>Button Next</ButtonNext>
+    <Box>
+      <ButtonNext mx="1em">Button Next</ButtonNext>
+      <ButtonNext mx="1em">基金投資推薦</ButtonNext>
+    </Box>
   ));
