@@ -1,6 +1,6 @@
 {
   "name": "v-ui-elements",
-  "version": "0.0.1-18",
+  "version": "0.0.1-19",
   "private": true,
   "main": "dist/index.js",
   "scripts": {
@@ -10,10 +10,6 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@storybook/addon-actions": "^3.3.13",
-    "@storybook/addon-links": "^3.3.13",
-    "@storybook/addons": "^3.3.13",
-    "@storybook/react": "^3.3.13",
     "clean-element": "^1.0.0",
     "grid-styled": "^3.2.0",
     "lodash": "^4.17.5",
@@ -24,6 +20,10 @@
     "styled-system": "^2.1.0"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.3.13",
+    "@storybook/addon-links": "^3.3.13",
+    "@storybook/addons": "^3.3.13",
+    "@storybook/react": "^3.3.13",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",

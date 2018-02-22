@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import {
   fontSize,
@@ -22,7 +23,7 @@ const textTransform = style({
   cssProperty: 'textTransform',
 });
 
-const Text = styled(P)`
+const Text = styled(({ lineHeight: lh, ...props }) => <P {...props} />)`
   margin-top: 0;
   margin-bottom: 0;
   ${fontSize}

@@ -1,14 +1,22 @@
-import React from 'react';
-import styled from 'styled-components';
-import { top, left, right, bottom } from 'styled-system';
+import {
+  top,
+  left,
+  right,
+  bottom,
+  style,
+} from 'styled-system';
+
 import Box from './Box';
 
-const Absolute = styled(({
-  z,
-  ...props
-}) => <Box {...props} />)`
+const zIndex = style({
+  prop: 'zIndex',
+  cssProperty: 'zIndex',
+  alias: 'z',
+});
+
+const Absolute = Box.extend`
   position: absolute;
-  z-index: ${({ z }) => z};
+  ${zIndex}
   ${top};
   ${left};
   ${right};

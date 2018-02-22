@@ -81,7 +81,7 @@ Loader.defaultProps = {
   colors: (0, _range2.default)(1, 5).map(function (n) {
     return _theme.colors['color' + n];
   }),
-  height: '0.25em',
+  height: '4px',
   duration: 2
 };
 
