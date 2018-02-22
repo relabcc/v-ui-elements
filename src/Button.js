@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import { space, fontSize } from 'styled-system';
 import cleanElement from 'clean-element';
 
@@ -43,33 +42,6 @@ const Button = styled(cleanElement('button'))`
   ${fontSize}
   ${space};
 `;
-
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array,
-]);
-
-Button.propTypes = {
-  /** Size */
-  fullWidth: PropTypes.bool,
-  /** Margin */
-  m: numberStringOrArray,
-  mt: numberStringOrArray,
-  mr: numberStringOrArray,
-  mb: numberStringOrArray,
-  ml: numberStringOrArray,
-  mx: numberStringOrArray,
-  my: numberStringOrArray,
-  /** Padding */
-  p: numberStringOrArray,
-  pt: numberStringOrArray,
-  pr: numberStringOrArray,
-  pb: numberStringOrArray,
-  pl: numberStringOrArray,
-  px: numberStringOrArray,
-  py: numberStringOrArray,
-};
 
 Button.defaultProps = {
   f: '1em',

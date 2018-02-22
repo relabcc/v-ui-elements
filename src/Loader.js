@@ -49,7 +49,7 @@ Loader.propTypes = {
 
 Loader.defaultProps = {
   colors: range(1, 5).map(n => themeColors[`color${n}`]),
-  height: '4px',
+  height: '0.25em',
   duration: 2,
 };
 

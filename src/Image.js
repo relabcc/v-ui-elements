@@ -20,6 +20,4 @@ const Image = styled(Img)`
   ${width};
 `;
 
-Image.displayName = 'Image';
-
 export default Image;

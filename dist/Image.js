@@ -33,6 +33,4 @@ var Image = (0, _styledComponents2.default)(Img)(_templateObject, _styledSystem.
   return height ? '\n    width: auto;\n    height: ' + (0, _util.px)(height) + ';\n  ' : '\n    width: 100%;\n    height: auto;\n  ';
 }, _styledSystem.width);
 
-Image.displayName = 'Image';
-
 exports.default = Image;

@@ -10,10 +10,6 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
 var _styledComponents = require('styled-components');
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
@@ -39,15 +35,5 @@ var Absolute = (0, _styledComponents2.default)(function (_ref) {
   var z = _ref2.z;
   return z;
 }, _styledSystem.top, _styledSystem.left, _styledSystem.right, _styledSystem.bottom);
-
-var boolOrNumber = _propTypes2.default.oneOfType([_propTypes2.default.bool, _propTypes2.default.number, _propTypes2.default.string]);
-
-Absolute.propTypes = {
-  top: boolOrNumber,
-  bottom: boolOrNumber,
-  left: boolOrNumber,
-  right: boolOrNumber,
-  z: _propTypes2.default.number
-};
 
 exports.default = Absolute;

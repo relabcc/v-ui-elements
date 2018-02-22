@@ -10,10 +10,6 @@ var _styledComponents = require('styled-components');
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
 var _styledSystem = require('styled-system');
 
 var _cleanElement = require('clean-element');
@@ -38,29 +34,6 @@ var hoverColor = function hoverColor() {
 };
 
 var Button = (0, _styledComponents2.default)((0, _cleanElement2.default)('button'))(_templateObject, _theme.colors.white, _theme.colors.white, hoverColor('green'), hoverColor('green'), hoverColor('black'), fullWidth, _styledSystem.fontSize, _styledSystem.space);
-
-var numberStringOrArray = _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string, _propTypes2.default.array]);
-
-Button.propTypes = {
-  /** Size */
-  fullWidth: _propTypes2.default.bool,
-  /** Margin */
-  m: numberStringOrArray,
-  mt: numberStringOrArray,
-  mr: numberStringOrArray,
-  mb: numberStringOrArray,
-  ml: numberStringOrArray,
-  mx: numberStringOrArray,
-  my: numberStringOrArray,
-  /** Padding */
-  p: numberStringOrArray,
-  pt: numberStringOrArray,
-  pr: numberStringOrArray,
-  pb: numberStringOrArray,
-  pl: numberStringOrArray,
-  px: numberStringOrArray,
-  py: numberStringOrArray
-};
 
 Button.defaultProps = {
   f: '1em',
