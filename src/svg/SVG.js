@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import InlineBox from '../InlineBox';
 
 const Container = InlineBox.extend`
-  vertical-align: middle;
   svg {
+    vertical-align: bottom;
     width: 100%;
   }
 `;

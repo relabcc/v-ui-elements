@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  vertical-align: middle;\n  svg {\n    width: 100%;\n  }\n'], ['\n  vertical-align: middle;\n  svg {\n    width: 100%;\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  svg {\n    vertical-align: bottom;\n    width: 100%;\n  }\n'], ['\n  svg {\n    vertical-align: bottom;\n    width: 100%;\n  }\n']);
 
 var _react = require('react');
 

@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  -webkit-font-smoothing: antialiased;\n  display: inline-block;\n  vertical-align: middle;\n  text-align: center;\n  text-decoration: none;\n  font-family: inherit;\n  cursor: pointer;\n  border-radius: 1.75em;\n  border: 1px solid ', ';\n  background-color: transparent;\n  color: ', ';\n  transition: all 0.25s ease;\n  line-height: 1;\n  > * {\n    vertical-align: middle;\n  }\n\n  &:disabled {\n    opacity: 0.5;\n    cursor: default;\n  }\n\n  &:hover,\n  &:focus {\n    background-color: ', ';\n    border-color: ', ';\n    color: ', ';\n  }\n\n  ', '\n  ', '\n  ', ';\n'], ['\n  -webkit-font-smoothing: antialiased;\n  display: inline-block;\n  vertical-align: middle;\n  text-align: center;\n  text-decoration: none;\n  font-family: inherit;\n  cursor: pointer;\n  border-radius: 1.75em;\n  border: 1px solid ', ';\n  background-color: transparent;\n  color: ', ';\n  transition: all 0.25s ease;\n  line-height: 1;\n  > * {\n    vertical-align: middle;\n  }\n\n  &:disabled {\n    opacity: 0.5;\n    cursor: default;\n  }\n\n  &:hover,\n  &:focus {\n    background-color: ', ';\n    border-color: ', ';\n    color: ', ';\n  }\n\n  ', '\n  ', '\n  ', ';\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  -webkit-font-smoothing: antialiased;\n  display: inline-block;\n  vertical-align: middle;\n  text-align: center;\n  text-decoration: none;\n  font-family: inherit;\n  cursor: pointer;\n  border-radius: 1.75em;\n  border: 1px solid ', ';\n  background-color: transparent;\n  color: ', ';\n  transition: all 0.25s ease;\n  line-height: 1;\n\n  > * {\n    vertical-align: middle;\n  }\n\n  &:disabled {\n    opacity: 0.5;\n    cursor: default;\n  }\n\n  &:hover,\n  &:focus {\n    background-color: ', ';\n    border-color: ', ';\n    color: ', ';\n  }\n\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  -webkit-font-smoothing: antialiased;\n  display: inline-block;\n  vertical-align: middle;\n  text-align: center;\n  text-decoration: none;\n  font-family: inherit;\n  cursor: pointer;\n  border-radius: 1.75em;\n  border: 1px solid ', ';\n  background-color: transparent;\n  color: ', ';\n  transition: all 0.25s ease;\n  line-height: 1;\n\n  > * {\n    vertical-align: middle;\n  }\n\n  &:disabled {\n    opacity: 0.5;\n    cursor: default;\n  }\n\n  &:hover,\n  &:focus {\n    background-color: ', ';\n    border-color: ', ';\n    color: ', ';\n  }\n\n  ', '\n  ', '\n  ', '\n  ', '\n']);
 
 var _styledComponents = require('styled-components');
 
@@ -33,7 +33,7 @@ var hoverColor = function hoverColor() {
   };
 };
 
-var Button = (0, _styledComponents2.default)((0, _cleanElement2.default)('button'))(_templateObject, _theme.colors.white, _theme.colors.white, hoverColor('green'), hoverColor('green'), hoverColor('black'), fullWidth, _styledSystem.fontSize, _styledSystem.space);
+var Button = (0, _styledComponents2.default)((0, _cleanElement2.default)('button'))(_templateObject, _theme.colors.white, _theme.colors.white, hoverColor('green'), hoverColor('green'), hoverColor('black'), fullWidth, _styledSystem.fontSize, _styledSystem.space, _styledSystem.display);
 
 Button.defaultProps = {
   f: '1em',

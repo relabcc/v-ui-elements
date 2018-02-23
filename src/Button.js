@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { space, fontSize } from 'styled-system';
+import { space, fontSize, display } from 'styled-system';
 import cleanElement from 'clean-element';
 
 import { colors } from './theme';
@@ -22,6 +22,7 @@ const Button = styled(cleanElement('button'))`
   color: ${colors.white};
   transition: all 0.25s ease;
   line-height: 1;
+
   > * {
     vertical-align: middle;
   }
@@ -40,7 +41,8 @@ const Button = styled(cleanElement('button'))`
 
   ${fullWidth}
   ${fontSize}
-  ${space};
+  ${space}
+  ${display}
 `;
 
 Button.defaultProps = {
