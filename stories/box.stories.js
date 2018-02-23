@@ -21,4 +21,20 @@ storiesOf('Box', module)
       <Box align="center">Qui minus itaque rerum asperiores facilis est alias.</Box>
       <Box align="right">Qui minus itaque rerum asperiores facilis est alias.</Box>
     </Box>
+  ))
+  .add('Responsive', () => (
+    <div>
+      <Box height={200} bg="green">
+        XS
+      </Box>
+      <Box height={200} bg="yellow" display={['none', 'block']}>
+        SM
+      </Box>
+      <Box height={200} bg="red" display={['none', null, 'block']}>
+        MD
+      </Box>
+      <Box height={200} bg="blue" display={['none', null, null, 'block']}>
+        LG
+      </Box>
+    </div>
   ));

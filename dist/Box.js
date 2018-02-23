@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n']);
 
 var _react = require('react');
 
@@ -55,4 +55,4 @@ exports.default = (0, _styledComponents2.default)(function (_ref) {
       props = _objectWithoutProperties(_ref, ['height', 'transform', 'overflow', 'overflowX', 'overflowY']);
 
   return _react2.default.createElement(_Box2.default, props);
-})(_templateObject, injectHeight, injectAlign, (0, _injectProps2.default)('overflow'), (0, _injectProps2.default)('overflowX'), (0, _injectProps2.default)('overflowY'), injectTransform);
+})(_templateObject, _styledSystem.display, injectHeight, injectAlign, (0, _injectProps2.default)('overflow'), (0, _injectProps2.default)('overflowX'), (0, _injectProps2.default)('overflowY'), injectTransform);

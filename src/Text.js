@@ -8,6 +8,7 @@ import {
   color,
   responsiveStyle,
   style,
+  display,
 } from 'styled-system';
 import cleanElement from 'clean-element';
 
@@ -26,6 +27,7 @@ const textTransform = style({
 const Text = styled(({ lineHeight: lh, ...props }) => <P {...props} />)`
   margin-top: 0;
   margin-bottom: 0;
+  ${display}
   ${fontSize}
   ${space}
   ${color}

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Box from 'grid-styled/dist/Box';
-import { responsiveStyle } from 'styled-system';
+import { responsiveStyle, display } from 'styled-system';
 
 import injectProps from './utils/injectProps';
 
@@ -21,6 +21,7 @@ const injectTransform = responsiveStyle({
   cssProperty: 'transform',
 });
 
+
 export default styled(({
   height,
   transform,
@@ -29,6 +30,7 @@ export default styled(({
   overflowY,
   ...props
 }) => <Box {...props} />)`
+  ${display}
   ${injectHeight}
   ${injectAlign}
   ${injectProps('overflow')}

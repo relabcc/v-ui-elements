@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Flex from 'grid-styled/dist/Flex';
-import { responsiveStyle } from 'styled-system';
+import { responsiveStyle, display } from 'styled-system';
 
 import injectProps from './utils/injectProps';
 
@@ -18,6 +18,7 @@ export default styled(({
   overflowY,
   ...props
 }) => <Flex {...props} />)`
+  ${display}
   ${injectHeight}
   ${injectProps('overflow')}
   ${injectProps('overflowX')}
