@@ -26,24 +26,33 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-var ButtonNext = function ButtonNext(_ref) {
-  var children = _ref.children,
-      props = _objectWithoutProperties(_ref, ['children']);
+var render = function render(Comp) {
+  var ButtonNext = function ButtonNext(_ref) {
+    var children = _ref.children,
+        props = _objectWithoutProperties(_ref, ['children']);
 
-  return _react2.default.createElement(
-    _Button2.default,
-    _extends({ px: '1.5em' }, props),
-    _react2.default.createElement(
-      'span',
-      null,
-      children
-    ),
-    _react2.default.createElement(_Next2.default, { f: '1.5em', ml: '0.5em', w: '1em' })
-  );
+    var Btn = Comp ? _Button2.default.withComponent(Comp) : _Button2.default;
+    return _react2.default.createElement(
+      Btn,
+      _extends({ px: '1.5em' }, props),
+      _react2.default.createElement(
+        'span',
+        null,
+        children
+      ),
+      _react2.default.createElement(_Next2.default, { f: '1.5em', ml: '0.5em', w: '1em' })
+    );
+  };
+
+  ButtonNext.propTypes = {
+    children: _propTypes2.default.node.isRequired
+  };
+
+  return ButtonNext;
 };
 
-ButtonNext.propTypes = {
-  children: _propTypes2.default.node.isRequired
-};
+var Base = render();
 
-exports.default = ButtonNext;
+Base.withComponent = render;
+
+exports.default = Base;
