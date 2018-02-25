@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import {
   fontSize,
@@ -6,39 +5,38 @@ import {
   lineHeight,
   space,
   color,
-  responsiveStyle,
   style,
   display,
+  textAlign,
 } from 'styled-system';
-import cleanElement from 'clean-element';
+import tag from 'clean-tag';
 
-const P = cleanElement('p');
-
-const align = responsiveStyle({
-  prop: 'align',
-  cssProperty: 'textAlign',
-});
+import { textIndent, letterSpacing } from './utils/customProps';
+import blacklist from './utils/blacklist';
 
 const textTransform = style({
   prop: 'textTransform',
   cssProperty: 'textTransform',
 });
 
-const Text = styled(({ lineHeight: lh, ...props }) => <P {...props} />)`
+const Text = styled(tag.p)`
   margin-top: 0;
   margin-bottom: 0;
   ${display}
   ${fontSize}
   ${space}
   ${color}
-  ${align}
+  ${textAlign}
   ${fontWeight}
   ${lineHeight}
   ${textTransform}
+  ${textIndent}
+  ${letterSpacing}
 `;
 
 Text.defaultProps = {
   lineHeight: 1.5,
+  blacklist,
 };
 
 Text.span = Text.withComponent('span');

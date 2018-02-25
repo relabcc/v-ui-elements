@@ -6,10 +6,26 @@ import { BackgroundImage, Image } from '../src';
 
 storiesOf('Images', module)
   .add('BackgroundImage', () => (
-    <BackgroundImage
-      src="https://upload.wikimedia.org/wikipedia/commons/2/21/Angel_of_victory.jpg"
-      ratio={9 / 16}
-    />
+    <div>
+      <BackgroundImage
+        src="https://upload.wikimedia.org/wikipedia/commons/2/21/Angel_of_victory.jpg"
+        ratio={7 / 22}
+        my="1em"
+      />
+      <BackgroundImage
+        src="https://upload.wikimedia.org/wikipedia/commons/2/21/Angel_of_victory.jpg"
+        ratio={7 / 22}
+        position="50% 100%"
+        my="1em"
+      />
+      <BackgroundImage
+        src="https://upload.wikimedia.org/wikipedia/commons/2/21/Angel_of_victory.jpg"
+        ratio={7 / 22}
+        size="contain"
+        position="75% 50%"
+        my="1em"
+      />
+    </div>
   ))
   .add('ImageWithWidth', () => (
     <Image

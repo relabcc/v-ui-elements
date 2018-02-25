@@ -12,9 +12,9 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styledSystem = require('styled-system');
 
-var _cleanElement = require('clean-element');
+var _cleanTag = require('clean-tag');
 
-var _cleanElement2 = _interopRequireDefault(_cleanElement);
+var _cleanTag2 = _interopRequireDefault(_cleanTag);
 
 var _theme = require('./theme');
 
@@ -33,7 +33,7 @@ var hoverColor = function hoverColor() {
   };
 };
 
-var Button = (0, _styledComponents2.default)((0, _cleanElement2.default)('button'))(_templateObject, _theme.colors.white, _theme.colors.white, hoverColor('green'), hoverColor('green'), hoverColor('black'), fullWidth, _styledSystem.fontSize, _styledSystem.space, _styledSystem.display);
+var Button = (0, _styledComponents2.default)(_cleanTag2.default.button)(_templateObject, _theme.colors.white, _theme.colors.white, hoverColor('green'), hoverColor('green'), hoverColor('black'), fullWidth, _styledSystem.fontSize, _styledSystem.space, _styledSystem.display);
 
 Button.defaultProps = {
   f: '1em',

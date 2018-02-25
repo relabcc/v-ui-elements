@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { space, fontSize, display } from 'styled-system';
-import cleanElement from 'clean-element';
+import tag from 'clean-tag';
 
 import { colors } from './theme';
 
@@ -8,7 +8,7 @@ const fullWidth = props => (props.fullWidth ? { width: '100%' } : null);
 
 const hoverColor = (color = 'green') => props => (props.disabled ? null : colors[color]);
 
-const Button = styled(cleanElement('button'))`
+const Button = styled(tag.button)`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;

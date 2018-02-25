@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { space, width } from 'styled-system';
-import cleanElement from 'clean-element';
+import tag from 'clean-tag';
 import { px } from 'styled-system/dist/util';
 
 import injectProps from './utils/injectProps';
 
-const Img = cleanElement('img');
+const Img = tag.img;
 
 const Image = styled(Img)`
   ${space};

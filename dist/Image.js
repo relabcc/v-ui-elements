@@ -12,9 +12,9 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _styledSystem = require('styled-system');
 
-var _cleanElement = require('clean-element');
+var _cleanTag = require('clean-tag');
 
-var _cleanElement2 = _interopRequireDefault(_cleanElement);
+var _cleanTag2 = _interopRequireDefault(_cleanTag);
 
 var _util = require('styled-system/dist/util');
 
@@ -26,7 +26,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Img = (0, _cleanElement2.default)('img');
+var Img = _cleanTag2.default.img;
 
 var Image = (0, _styledComponents2.default)(Img)(_templateObject, _styledSystem.space, (0, _injectProps2.default)('verticalAlign'), function (_ref) {
   var height = _ref.height;

@@ -16,11 +16,23 @@ storiesOf('Box', module)
     </div>
   ))
   .add('Text Align', () => (
-    <Box>
+    <div>
       <Box align="left">Qui minus itaque rerum asperiores facilis est alias.</Box>
       <Box align="center">Qui minus itaque rerum asperiores facilis est alias.</Box>
       <Box align="right">Qui minus itaque rerum asperiores facilis est alias.</Box>
-    </Box>
+    </div>
+  ))
+  .add('Overflow', () => (
+    <div>
+      <Box w="7em" height="7em" overflow="hidden">Qui minus itaque rerum asperiores facilis est alias.</Box>
+      <Box w="7em" height="3em" overflowY="scroll">Qui minus itaque rerum asperiores facilis est alias.</Box>
+    </div>
+  ))
+  .add('Transform', () => (
+    <div>
+      <Box w={200} height={200} bg="yellow" />
+      <Box w={200} height={200} bg="red" transform="translateX(100%)" />
+    </div>
   ))
   .add('Responsive', () => (
     <div>

@@ -1,16 +1,17 @@
 {
   "name": "v-ui-elements",
-  "version": "0.0.1-23",
+  "version": "0.0.1-24",
   "private": true,
   "main": "dist/index.js",
   "scripts": {
+    "start": "npm run storybook",
     "prepublish": "npm run build",
     "build": "babel src -d dist",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "clean-element": "^1.0.0",
+    "clean-tag": "^1.0.4",
     "grid-styled": "^3.2.0",
     "lodash": "^4.17.5",
     "prop-types": "^15.6.0",
