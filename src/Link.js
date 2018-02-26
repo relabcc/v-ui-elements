@@ -52,7 +52,7 @@ Link.defaultProps = {
   display: 'inline-block',
   blacklist,
   color: 'white',
-  fontSize: '1em',
+  f: '1em',
   fontWeight: 'bold',
   spacing: '0.2em',
 };

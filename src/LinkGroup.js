@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Box from './Box';
+import Flex from './Flex';
 import Border from './Border';
 // import Text from './Text';
 
@@ -26,9 +26,9 @@ class LinkGroup extends Component {
   render() {
     const { children, ...props } = this.props;
     return (
-      <Box {...props}>
+      <Flex align="center" {...props}>
         {this.parseChildren(children)}
-      </Box>
+      </Flex>
     );
   }
 }

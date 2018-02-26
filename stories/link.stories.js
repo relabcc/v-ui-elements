@@ -8,10 +8,10 @@ import Box from '../src/Box';
 storiesOf('Link', module)
   .add('Link', () => (
     <Box>
-      <Link href="d">
+      <Link href="d" fontSize=".5em">
         連結一
       </Link>
-      <Link href="d">
+      <Link href="d" f=".5em">
         連結二
       </Link>
     </Box>
