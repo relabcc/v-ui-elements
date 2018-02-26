@@ -1,6 +1,6 @@
 {
   "name": "v-ui-elements",
-  "version": "0.0.1-24",
+  "version": "0.0.1-25",
   "private": true,
   "main": "dist/index.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "@storybook/addon-links": "^3.3.13",
     "@storybook/addons": "^3.3.13",
     "@storybook/react": "^3.3.13",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-preset-env": "^1.6.1",

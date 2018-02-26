@@ -8,9 +8,11 @@ import {
   style,
   display,
   textAlign,
+  textDecoration,
   margin,
 } from 'styled-system';
 import tag from 'clean-tag';
+import { colors } from './theme';
 
 import { textIndent, letterSpacing } from './utils/customProps';
 import blacklist from './utils/blacklist';
@@ -20,9 +22,17 @@ const textTransform = style({
   cssProperty: 'textTransform',
 });
 
-const Text = styled(tag.p)`
+const Link = styled(tag.a)`
   margin-top: 0;
   margin-bottom: 0;
+  text-Decoration: none;
+  transition: all 0.25s ease;
+  color: ${colors.white};
+  &:hover,
+  &:focus {
+    color: ${colors.green};
+  }
+
   ${display}
   ${fontSize}
   ${space}
@@ -32,16 +42,19 @@ const Text = styled(tag.p)`
   ${lineHeight}
   ${textTransform}
   ${textIndent}
-  ${margin}
   ${letterSpacing}
+  ${textDecoration}
+  ${margin}
 `;
 
-Text.defaultProps = {
+Link.defaultProps = {
   lineHeight: 1.5,
+  display: 'inline-block',
   blacklist,
+  color: 'white',
+  fontSize: '1em',
+  fontWeight: 'bold',
+  spacing: '0.2em',
 };
 
-Text.span = Text.withComponent('span');
-Text.s = Text.withComponent('s');
-
-export default Text;
+export default Link;

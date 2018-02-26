@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  margin-top: 0;\n  margin-bottom: 0;\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  margin-top: 0;\n  margin-bottom: 0;\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  margin-top: 0;\n  margin-bottom: 0;\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  margin-top: 0;\n  margin-bottom: 0;\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n']);
 
 var _styledComponents = require('styled-components');
 
@@ -31,7 +31,7 @@ var textTransform = (0, _styledSystem.style)({
   cssProperty: 'textTransform'
 });
 
-var Text = (0, _styledComponents2.default)(_cleanTag2.default.p)(_templateObject, _styledSystem.display, _styledSystem.fontSize, _styledSystem.space, _styledSystem.color, _styledSystem.textAlign, _styledSystem.fontWeight, _styledSystem.lineHeight, textTransform, _customProps.textIndent, _customProps.letterSpacing);
+var Text = (0, _styledComponents2.default)(_cleanTag2.default.p)(_templateObject, _styledSystem.display, _styledSystem.fontSize, _styledSystem.space, _styledSystem.color, _styledSystem.textAlign, _styledSystem.fontWeight, _styledSystem.lineHeight, textTransform, _customProps.textIndent, _styledSystem.margin, _customProps.letterSpacing);
 
 Text.defaultProps = {
   lineHeight: 1.5,
