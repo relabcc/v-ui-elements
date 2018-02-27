@@ -10,6 +10,7 @@ import {
   right,
   bottom,
   position,
+  style,
 } from 'styled-system';
 
 import injectProps from './utils/injectProps';
@@ -20,10 +21,11 @@ const injectTransform = responsiveStyle({
   cssProperty: 'transform',
 });
 
-// const injectPositon = responsiveStyle({
-//   prop: 'position',
-//   cssProperty: 'position',
-// });
+const zIndex = style({
+  prop: 'zIndex',
+  cssProperty: 'zIndex',
+  alias: 'z',
+});
 
 const StyledBox = styled(Box)`
   ${display}
@@ -32,6 +34,7 @@ const StyledBox = styled(Box)`
   ${injectProps('overflowX')}
   ${injectProps('overflowY')}
   ${position}
+  ${zIndex}
   ${injectTransform}
   ${textAlign}
   ${top}

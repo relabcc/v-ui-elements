@@ -10,9 +10,9 @@ storiesOf('Box', module)
   .add('Absolute', () => (<Absolute w={200} height={200} bg="green" top="2em" left={100} />))
   .add('Z Index', () => (
     <div>
-      <Absolute w={200} height={200} bg="green" top={0} left={0} z={1} />
-      <Absolute w={200} height={200} bg="yellow" top={50} left={50} />
-      <Absolute w={200} height={200} bg="red" top={100} left={100} />
+      <Box w={200} height={200} bg="green" top={0} left={0} z={1} position="absolute" />
+      <Box w={200} height={200} bg="yellow" top={50} left={50} position="absolute" />
+      <Box w={200} height={200} bg="red" top={100} left={100} position="absolute" />
     </div>
   ))
   .add('Text Align', () => (
