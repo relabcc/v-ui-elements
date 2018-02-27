@@ -5,6 +5,10 @@ import {
   display,
   textAlign,
   height,
+  top,
+  left,
+  right,
+  bottom,
 } from 'styled-system';
 
 import injectProps from './utils/injectProps';
@@ -29,6 +33,10 @@ const StyledBox = styled(Box)`
   ${injectPositon}
   ${injectTransform}
   ${textAlign}
+  ${top}
+  ${left}
+  ${right}
+  ${bottom}
 `;
 
 StyledBox.defaultProps = {

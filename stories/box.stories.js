@@ -34,6 +34,12 @@ storiesOf('Box', module)
       <Box w={200} height={200} bg="red" transform="translateX(100%)" />
     </div>
   ))
+  .add('Position', () => (
+    <div>
+      <Box w={200} height={200} bg="yellow" />
+      <Box w={200} height={200} bg="red" position="absolute" top="0" right="0" />
+    </div>
+  ))
   .add('Responsive', () => (
     <div>
       <Box height={200} bg="green">

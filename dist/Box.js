@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n'], ['\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n  ', '\n']);
 
 var _styledComponents = require('styled-components');
 
@@ -33,7 +33,12 @@ var injectTransform = (0, _styledSystem.responsiveStyle)({
   cssProperty: 'transform'
 });
 
-var StyledBox = (0, _styledComponents2.default)(_Box2.default)(_templateObject, _styledSystem.display, _styledSystem.height, (0, _injectProps2.default)('overflow'), (0, _injectProps2.default)('overflowX'), (0, _injectProps2.default)('overflowY'), injectTransform, _styledSystem.textAlign);
+var injectPositon = (0, _styledSystem.responsiveStyle)({
+  prop: 'position',
+  cssProperty: 'position'
+});
+
+var StyledBox = (0, _styledComponents2.default)(_Box2.default)(_templateObject, _styledSystem.display, _styledSystem.height, (0, _injectProps2.default)('overflow'), (0, _injectProps2.default)('overflowX'), (0, _injectProps2.default)('overflowY'), injectPositon, injectTransform, _styledSystem.textAlign, _styledSystem.top, _styledSystem.left, _styledSystem.right, _styledSystem.bottom);
 
 StyledBox.defaultProps = {
   blacklist: _blacklist2.default

@@ -40,7 +40,7 @@ Link.defaultProps = {
   display: 'inline-block',
   blacklist: _blacklist2.default,
   color: 'white',
-  fontSize: '1em',
+  f: '1em',
   fontWeight: 'bold',
   spacing: '0.2em'
 };
