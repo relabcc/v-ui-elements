@@ -14,4 +14,6 @@ export default [
   'overflow',
   'overflowX',
   'overflowY',
+  'z',
+  'zIndex',
 ];
