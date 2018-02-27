@@ -11,7 +11,6 @@ export default [
   'letterSpacing',
   'spacing',
   'transform',
-  'positon',
   'overflow',
   'overflowX',
   'overflowY',
