@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import Flex from './Flex';
 import Border from './Border';
-// import Text from './Text';
 
 const addSeperator = (accu, current, index) => {
   let toConcat = current;

@@ -15,12 +15,18 @@ const injectTransform = responsiveStyle({
   cssProperty: 'transform',
 });
 
+const injectPositon = responsiveStyle({
+  prop: 'position',
+  cssProperty: 'position',
+});
+
 const StyledBox = styled(Box)`
   ${display}
   ${height}
   ${injectProps('overflow')}
   ${injectProps('overflowX')}
   ${injectProps('overflowY')}
+  ${injectPositon}
   ${injectTransform}
   ${textAlign}
 `;
